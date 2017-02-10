@@ -26,7 +26,6 @@ class LearningMap(object):
       value1 = raw_input("Enter skill completed:")
       self.studied_skills.append(value1)
       value2 = raw_input("Any other skill? (Yes or No)" )
-      print (studied_skills)
       
   def skills_not_studied(self):
     setMySkills = set(self.my_skills)
