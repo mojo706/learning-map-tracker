@@ -37,12 +37,9 @@ class LearningMap(object):
     for i,skill in enumerate(list_skills_not_studied):
       print '%d. %s' % (i+1, skill) # Add string formatters
 
-    def progress(self):
+  def progress(self):
         a = len(self.my_skills)
         b = len(self.studied_skills)
-        c = (b/a) * 100
-        print (c)
-
-
-
+        c = (float(b)/a) * 100
+        print ('you have completed '+ str(c)+ '%')
 
