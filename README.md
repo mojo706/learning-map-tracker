@@ -1,4 +1,4 @@
-# learning-map-tracker
+# Learning Map Tracker
 CLI app to track skills
 # To Use
 # Methods
@@ -9,7 +9,8 @@ CLI app to track skills
  - progress()
  
 # To Start
-``` user = LearningMap("user") ```
+``` user = LearningMap("user") ```  
+
 ``` user.function_to_call() ```
 
 
