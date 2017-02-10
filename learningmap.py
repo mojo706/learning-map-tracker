@@ -32,11 +32,16 @@ class LearningMap(object):
     setMySkills = set(self.my_skills)
     setStudiedSkills = set(self.studied_skills)
     set_skills_not_studied = setMySkills - setStudiedSkills
-    list_skills_not_studied = list(set_skills_not_studied) 
-     for i,skill in enumerate(elf.):
-      print '%d. %s' % (i+1, skill)
-    
+    list_skills_not_studied = list(set_skills_not_studied)
+    print ('skills not studied')
+    for i,skill in enumerate(list_skills_not_studied):
+      print '%d. %s' % (i+1, skill) # Add string formatters
 
+    def progress(self):
+        a = len(self.my_skills)
+        b = len(self.studied_skills)
+        c = (b/a) * 100
+        print (c)
 
 
 
